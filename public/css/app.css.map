@@ -1,0 +1,1 @@
+{"version":3,"sources":["app.scss"],"names":[],"mappings":"AACA,2EAAY","file":"app.css","sourcesContent":["// Fonts\n@import url(\"https://fonts.googleapis.com/css?family=Raleway:300,400,600\");\n\n// Variables\n@import \"variables\";\n\n// @import \"teste\";\n\n// Bootstrap\n// @import \"~bootstrap-sass/assets/stylesheets/bootstrap\";\n"],"sourceRoot":"/source/"}
