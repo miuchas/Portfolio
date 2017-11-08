@@ -9,7 +9,7 @@
     -# %link{:href => "/favicon.ico", :rel => "icon", :type => "image/x-icon"}
 
     -# CSS
-    %link{:href => "/css/theme-default.css", :rel => "stylesheet", :type => "text/css"}
+    %link{:href => "/css/app.css", :rel => "stylesheet", :type => "text/css"}
 
   %body
     @include('topo')
