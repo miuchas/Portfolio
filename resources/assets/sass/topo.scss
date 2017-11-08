@@ -1,1 +1,71 @@
-
+.topo{
+  padding: 50px;
+  padding-bottom: 0px;
+  .arrow{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 0px solid transparent;
+    border-bottom: 24px solid transparent;
+    border-left: 24px solid #6c6c6c;
+  }
+  .apresentacao{
+    position: relative;
+    .circulo{
+      background-color: silver;
+      background-image: url(/img/eu.jpg);
+      background-repeat: no-repeat;
+      background-position: bottom;
+      background-size: 100px;
+      border: 5px solid #6c6c6c;
+      border-radius: 50%;
+      height: 120px;
+      width: 120px;
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+    }
+    .textos{
+      display: inline-block;
+      position: absolute;
+      top: 33px;
+      width: 283px;
+      left: 108px;
+      Z-INDEX: 0;
+      .nome, .cargo{
+        padding: 0px 20px;
+      }
+      .nome{
+      }
+      .cargo{
+        background-color: #6c6c6c;
+        position: relative;
+        width: calc(100% - 24px);
+        color: silver;
+        .arrow{
+          right: -24px;
+          top: 0px;
+          border-top: 0px solid transparent;
+          border-bottom: 24px solid transparent;
+          border-left: 24px solid #6c6c6c;
+        }
+      }
+    }
+  }
+  .menu{
+    height: 63px;
+    background-color: #898989;
+    top: -70px;
+    position: relative;
+    opacity: 0.5;
+    z-index: -1;
+    width: calc(100% - 117px);
+    margin-left: 54px;
+    .arrow{
+      right: -63px;
+      border-top: 0px solid transparent;
+      border-bottom: 63px solid transparent;
+      border-left: 63px solid #898989;
+    }
+  }
+}

@@ -1,1 +1,12 @@
-%i.fa.fa-address-book{"aria-hidden"=>"true"}
+
+.topo
+  .apresentacao
+    .circulo
+    .textos
+      .nome
+        Phelipe Evangelista Simim Diniz
+      .cargo
+        Desenvolvedor & Designer
+        .arrow
+  .menu
+    .arrow
