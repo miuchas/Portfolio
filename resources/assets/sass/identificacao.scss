@@ -1,4 +1,4 @@
-.topo{
+section#topo{
   padding: 50px;
   padding-bottom: 0px;
   .arrow{
@@ -7,7 +7,7 @@
     height: 0;
     border-top: 0px solid transparent;
     border-bottom: 24px solid transparent;
-    border-left: 24px solid #6c6c6c;
+    border-left: 24px solid #01D1FF;
   }
   .apresentacao{
     position: relative;
@@ -17,7 +17,7 @@
       background-repeat: no-repeat;
       background-position: bottom;
       background-size: 100px;
-      border: 5px solid #6c6c6c;
+      border: 5px solid #01D1FF;
       border-radius: 50%;
       height: 120px;
       width: 120px;
@@ -38,23 +38,23 @@
       .nome{
       }
       .cargo{
-        background-color: #6c6c6c;
+        background-color: #01D1FF;
         position: relative;
         width: calc(100% - 24px);
-        color: silver;
+        color: white;
         .arrow{
           right: -24px;
           top: 0px;
           border-top: 0px solid transparent;
           border-bottom: 24px solid transparent;
-          border-left: 24px solid #6c6c6c;
+          border-left: 24px solid #01D1FF;
         }
       }
     }
   }
   .menu{
     height: 63px;
-    background-color: #898989;
+    background-color: #01d1ff;
     top: -70px;
     position: relative;
     opacity: 0.5;
@@ -65,7 +65,7 @@
       right: -63px;
       border-top: 0px solid transparent;
       border-bottom: 63px solid transparent;
-      border-left: 63px solid #898989;
+      border-left: 63px solid #01d1ff;
     }
   }
 }

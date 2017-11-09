@@ -1,5 +1,4 @@
-
-.topo
+%section#topo
   .apresentacao
     .circulo
     .textos

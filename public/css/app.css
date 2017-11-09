@@ -13242,31 +13242,31 @@ html {
   clip: auto;
 }
 
-.topo {
+section#topo {
   padding: 50px;
   padding-bottom: 0px;
 }
 
-.topo .arrow {
+section#topo .arrow {
   position: absolute;
   width: 0;
   height: 0;
   border-top: 0px solid transparent;
   border-bottom: 24px solid transparent;
-  border-left: 24px solid #6c6c6c;
+  border-left: 24px solid #01D1FF;
 }
 
-.topo .apresentacao {
+section#topo .apresentacao {
   position: relative;
 }
 
-.topo .apresentacao .circulo {
+section#topo .apresentacao .circulo {
   background-color: silver;
   background-image: url(/img/eu.jpg);
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: 100px;
-  border: 5px solid #6c6c6c;
+  border: 5px solid #01D1FF;
   border-radius: 50%;
   height: 120px;
   width: 120px;
@@ -13275,7 +13275,7 @@ html {
   z-index: 1;
 }
 
-.topo .apresentacao .textos {
+section#topo .apresentacao .textos {
   display: inline-block;
   position: absolute;
   top: 33px;
@@ -13284,28 +13284,28 @@ html {
   Z-INDEX: 0;
 }
 
-.topo .apresentacao .textos .nome, .topo .apresentacao .textos .cargo {
+section#topo .apresentacao .textos .nome, section#topo .apresentacao .textos .cargo {
   padding: 0px 20px;
 }
 
-.topo .apresentacao .textos .cargo {
-  background-color: #6c6c6c;
+section#topo .apresentacao .textos .cargo {
+  background-color: #01D1FF;
   position: relative;
   width: calc(100% - 24px);
-  color: silver;
+  color: white;
 }
 
-.topo .apresentacao .textos .cargo .arrow {
+section#topo .apresentacao .textos .cargo .arrow {
   right: -24px;
   top: 0px;
   border-top: 0px solid transparent;
   border-bottom: 24px solid transparent;
-  border-left: 24px solid #6c6c6c;
+  border-left: 24px solid #01D1FF;
 }
 
-.topo .menu {
+section#topo .menu {
   height: 63px;
-  background-color: #898989;
+  background-color: #01d1ff;
   top: -70px;
   position: relative;
   opacity: 0.5;
@@ -13314,18 +13314,16 @@ html {
   margin-left: 54px;
 }
 
-.topo .menu .arrow {
+section#topo .menu .arrow {
   right: -63px;
   border-top: 0px solid transparent;
   border-bottom: 63px solid transparent;
-  border-left: 63px solid #898989;
+  border-left: 63px solid #01d1ff;
 }
 
 body {
-  background-color: #e7e7e7;
-  background-image: linear-gradient(30deg, #d9d9d9 12%, transparent 12.5%, transparent 87%, #d9d9d9 87.5%, #d9d9d9), linear-gradient(150deg, #d9d9d9 12%, transparent 12.5%, transparent 87%, #d9d9d9 87.5%, #d9d9d9), linear-gradient(30deg, #d9d9d9 12%, transparent 12.5%, transparent 87%, #d9d9d9 87.5%, #d9d9d9), linear-gradient(150deg, #d9d9d9 12%, transparent 12.5%, transparent 87%, #d9d9d9 87.5%, #d9d9d9), linear-gradient(60deg, #ffffff 25%, transparent 25.5%, transparent 75%, #ffffff 75%, #ffffff), linear-gradient(60deg, #ffffff 25%, transparent 25.5%, transparent 75%, #ffffff 75%, #ffffff);
-  background-size: 80px 140px;
-  background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+  color: white;
+  background: #3E484A url(/img/textura-granulada.png);
 }
 
 /*# sourceMappingURL=app.css.map */

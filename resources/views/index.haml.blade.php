@@ -12,4 +12,8 @@
     %link{:href => "/css/app.css", :rel => "stylesheet", :type => "text/css"}
 
   %body
-    @include('topo')
+    @include('banner')
+    @include('identificacao')
+
+
+  %script{:src => "/js/app.js", :type => "text/javascript"}

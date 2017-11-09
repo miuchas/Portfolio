@@ -1,0 +1,51 @@
+$sprite-animation-init: background .8s steps(6);
+$sprite-animation: play .8s steps(6);
+$sprite-bg-position-0: 0px 0;
+$sprite-bg-position-100: 700px 0;
+
+#spritedemo{
+  background: url(/img/coin.png)  left center;
+  height: 200px;
+  width: 115px;
+
+  background-position: 0em;
+  -webkit-transition:	$sprite-animation-init ;
+  -moz-transition:	$sprite-animation-init ;
+  -ms-transition:	$sprite-animation-init ;
+  -o-transition:	$sprite-animation-init ;
+  transition:	$sprite-animation-init ;
+}
+
+#spritedemo:hover {
+  -webkit-animation: $sprite-animation;
+  -moz-animation: $sprite-animation;
+  -ms-animation: $sprite-animation;
+  -o-animation: $sprite-animation;
+  animation: $sprite-animation;
+  // background-position:-700px;
+}
+
+@-webkit-keyframes play {
+  0% { background-position: $sprite-bg-position-0 }
+  100% { background-position: $sprite-bg-position-100 }
+}
+
+@-moz-keyframes play {
+  0% { background-position: $sprite-bg-position-0 }
+  100% { background-position: $sprite-bg-position-100 }
+}
+
+@-ms-keyframes play {
+  0% { background-position: $sprite-bg-position-0 }
+  100% { background-position: $sprite-bg-position-100 }
+}
+
+@-o-keyframes play {
+  0% { background-position: $sprite-bg-position-0 }
+  100% { background-position: $sprite-bg-position-100 }
+}
+
+@keyframes play {
+  0% { background-position: $sprite-bg-position-0 }
+  100% { background-position: $sprite-bg-position-100 }
+}

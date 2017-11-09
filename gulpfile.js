@@ -16,8 +16,9 @@ elixir(function(mix) {
 
     mix.scripts([
       'jquery-3.2.1.min.js',
-      'bootstrap/bootstrap.js',
       'bootstrap/bootstrap.bundle.js',
-      'app.js',
+      'bootstrap/popper.js',
+      'bootstrap/bootstrap.js',
+      'banner.js',
     ],'public/js/app.js', './resources/assets/js/');
 });
