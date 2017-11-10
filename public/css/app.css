@@ -13321,6 +13321,137 @@ section#topo .menu .arrow {
   border-left: 63px solid #01d1ff;
 }
 
+section#timeline .icon {
+  text-align: center;
+  padding: 40px;
+}
+
+section#timeline .icon i {
+  background-color: #03a9f4;
+  border: 1px solid #03a9f4;
+  border-radius: 50%;
+  margin-right: 5px;
+  padding: 5px;
+}
+
+section#timeline .line {
+  border-right: 2px solid #03A9F4;
+  padding-bottom: 40px;
+}
+
+section#timeline .titulo {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+section#timeline .titulo .linha-texto-left {
+  width: calc(50% - 90px);
+  height: 1px;
+  background: #03a9f4;
+  position: absolute;
+  right: 0px;
+  top: 10px;
+  Z-INDEX: 1;
+}
+
+section#timeline .titulo .linha-texto-left .inicio-linha {
+  height: 2px;
+  width: 2px;
+  border: 3px solid #03a9f4;
+  border-radius: 50%;
+  position: relative;
+  top: -3px;
+  left: -6px;
+}
+
+section#timeline .titulo .linha-texto-left .encontro-linha {
+  position: absolute;
+  right: -17px;
+  top: -15px;
+}
+
+section#timeline .titulo .linha-texto-left .encontro-linha i {
+  background-color: #03a9f4;
+  border: 1px solid #03a9f4;
+  border-radius: 50%;
+  padding: 7px 5px;
+}
+
+section#timeline .titulo .texto {
+  width: 180px;
+  text-align: center;
+  margin: 0 auto;
+  background-color: #919191;
+  color: white;
+  position: relative;
+}
+
+section#timeline .titulo .texto .seta {
+  position: absolute;
+  width: 0;
+  height: 0;
+  right: -12px;
+  top: 0px;
+  border-top: 0px solid transparent;
+  border-bottom: 24px solid transparent;
+  border-left: 12px solid #919191;
+}
+
+section#timeline .padding-left-0 {
+  padding: 35px 0px 0px;
+  text-align: center;
+}
+
+section#timeline .curso {
+  position: relative;
+}
+
+section#timeline .curso .linha-texto-right {
+  width: calc(50% - 116px);
+  height: 1px;
+  background: #03a9f4;
+  position: absolute;
+  left: 0px;
+  top: 10px;
+  z-index: 1;
+}
+
+section#timeline .curso .linha-texto-right .inicio-linha {
+  height: 2px;
+  width: 2px;
+  border: 3px solid #03a9f4;
+  border-radius: 50%;
+  position: absolute;
+  top: -3px;
+  right: -6px;
+}
+
+section#timeline .curso .instituicao {
+  width: 235px;
+  text-align: center;
+  margin: 0 auto;
+  background-color: #919191;
+  color: white;
+  position: relative;
+}
+
+section#timeline .curso .instituicao .seta {
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: -12px;
+  top: 0px;
+  border-top: 0px solid transparent;
+  border-bottom: 24px solid transparent;
+  border-right: 12px solid #919191;
+}
+
+section#timeline .curso .descricao {
+  padding: 5px 15px 10px;
+  width: 290px;
+  margin: 0 auto;
+}
+
 body {
   color: white;
   background: #3E484A url(/img/textura-granulada.png);

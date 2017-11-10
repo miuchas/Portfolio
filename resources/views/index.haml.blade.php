@@ -12,8 +12,10 @@
     %link{:href => "/css/app.css", :rel => "stylesheet", :type => "text/css"}
 
   %body
-    @include('banner')
-    @include('identificacao')
+    .container
+      @include('banner')
+      -# @include('identificacao')
+      @include('timeline')
 
 
   %script{:src => "/js/app.js", :type => "text/javascript"}

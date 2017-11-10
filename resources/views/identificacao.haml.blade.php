@@ -1,4 +1,4 @@
-%section#topo
+%section#topo.row
   .apresentacao
     .circulo
     .textos
