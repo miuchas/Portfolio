@@ -1,20 +1,23 @@
 section#timeline{
+  $azul: #03A9F4;
+  $cinza-campos: #919191;
+
   .icon{
     text-align: center;
     padding: 40px;
     i{
-      background-color: #03a9f4;
-      border: 1px solid #03a9f4;
+      background-color: $azul;
+      border: 1px solid $azul;
       border-radius: 50%;
       margin-right: 5px;
-      padding: 5px;
+      padding: 5px 6px;
     }
   }
   .titulo{
 
   }
   .line{
-    border-right: 2px solid #03A9F4;
+    border-right: 2px solid $azul;
     padding-bottom: 40px;
   }
   .titulo{
@@ -23,7 +26,7 @@ section#timeline{
     .linha-texto-left{
       width: calc(50% - 90px);
       height: 1px;
-      background: #03a9f4;
+      background: $azul;
       position: absolute;
       right: 0px;
       top: 10px;
@@ -31,7 +34,7 @@ section#timeline{
       .inicio-linha{
         height: 2px;
         width: 2px;
-        border: 3px solid #03a9f4;
+        border: 3px solid $azul;
         border-radius: 50%;
         position: relative;
         top: -3px;
@@ -42,10 +45,13 @@ section#timeline{
         right: -17px;
         top: -15px;
         i{
-          background-color: #03a9f4;
-          border: 1px solid #03a9f4;
+          background-color: $azul;
+          border: 1px solid $azul;
           border-radius: 50%;
-          padding: 7px 5px;
+          padding: 7px 7px;
+          &.fa-graduation-cap{
+            padding: 7px 5px;
+          }
         }
       }
     }
@@ -53,7 +59,7 @@ section#timeline{
       width: 180px;
       text-align: center;
       margin: 0 auto;
-      background-color: #919191;
+      background-color: $cinza-campos;
       color: white;
       position: relative;
       .seta{
@@ -64,7 +70,7 @@ section#timeline{
         top: 0px;
         border-top: 0px solid transparent;
         border-bottom: 24px solid transparent;
-        border-left: 12px solid #919191;
+        border-left: 12px solid $cinza-campos;
       }
     }
   }
@@ -77,18 +83,18 @@ section#timeline{
     .linha-texto-right{
       width: calc(50% - 116px);
       height: 1px;
-      background: #03a9f4;
       position: absolute;
       left: 0px;
-      top: 10px;
+      top: 12px;
       z-index: 1;
+      border-top: 1px dashed #03a9f4;
       .inicio-linha{
         height: 2px;
         width: 2px;
-        border: 3px solid #03a9f4;
+        border: 3px solid #03A9F4;
         border-radius: 50%;
         position: absolute;
-        top: -3px;
+        top: -4px;
         right: -6px;
       }
     }
@@ -96,7 +102,7 @@ section#timeline{
       width: 235px;
       text-align: center;
       margin: 0 auto;
-      background-color: #919191;
+      background-color: $cinza-campos;
       color: white;
       position: relative;
       .seta{
@@ -107,7 +113,7 @@ section#timeline{
         top: 0px;
         border-top: 0px solid transparent;
         border-bottom: 24px solid transparent;
-        border-right: 12px solid #919191;
+        border-right: 12px solid $cinza-campos;
       }
     }
     .descricao{

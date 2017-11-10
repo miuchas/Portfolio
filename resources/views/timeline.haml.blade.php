@@ -4,6 +4,7 @@
       .icon
         %i.fa.fa-pencil
         Escolaridade
+
   .row
     .col.line
       .titulo
@@ -23,13 +24,14 @@
           .seta
         .descricao
           Jogos Digitais
+
   .row
     .col.line
       .titulo
         .linha-texto-left
           .inicio-linha
           .encontro-linha
-            %i.fa.fa-graduation-cap
+            %i.fa.fa-book
         .texto
           Formação Tecnologica
           .seta
@@ -65,7 +67,7 @@
         .linha-texto-left
           .inicio-linha
           .encontro-linha
-            %i.fa.fa-graduation-cap
+            %i.fa.fa-pencil
         .texto
           Outros Cursos
           .seta
