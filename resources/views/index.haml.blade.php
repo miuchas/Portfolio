@@ -18,6 +18,7 @@
   %body
     .container
       @include('banner')
+      @include('aptidoes')
       -# @include('identificacao')
       @include('timeline')
 
