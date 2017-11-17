@@ -13242,6 +13242,32 @@ html {
   clip: auto;
 }
 
+.morris-hover {
+  position: absolute;
+  z-index: 1000;
+}
+
+.morris-hover.morris-default-style {
+  border-radius: 10px;
+  padding: 6px;
+  color: #666;
+  background: rgba(255, 255, 255, 0.8);
+  border: solid 2px rgba(230, 230, 230, 0.8);
+  font-family: sans-serif;
+  font-size: 12px;
+  text-align: center;
+}
+
+.morris-hover.morris-default-style .morris-hover-row-label {
+  font-weight: bold;
+  margin: 0.25em 0;
+}
+
+.morris-hover.morris-default-style .morris-hover-point {
+  white-space: nowrap;
+  margin: 0.1em 0;
+}
+
 section#topo {
   padding: 50px;
   padding-bottom: 0px;
@@ -13319,19 +13345,6 @@ section#topo .menu .arrow {
   border-top: 0px solid transparent;
   border-bottom: 63px solid transparent;
   border-left: 63px solid #01d1ff;
-}
-
-section#timeline .icon {
-  text-align: center;
-  padding: 40px;
-}
-
-section#timeline .icon i {
-  background-color: #03A9F4;
-  border: 1px solid #03A9F4;
-  border-radius: 50%;
-  margin-right: 5px;
-  padding: 5px 6px;
 }
 
 section#timeline .line {
@@ -13456,6 +13469,238 @@ section#timeline .curso .descricao {
   margin: 0 auto;
 }
 
+section#aptidoes {
+  margin-top: 40px;
+}
+
+/* -------------------------------------
+ * Bar container
+ * ------------------------------------- */
+.no-padding {
+  padding: 0px;
+}
+
+.topico {
+  font-size: 18px;
+  text-align: center;
+  margin: 0 auto 20px auto;
+}
+
+.progress-radial {
+  float: left;
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #2f3439;
+  background-color: #03A9F4;
+  margin: 0px 15px 50px;
+  text-align: center;
+}
+
+.progress-radial .text {
+  position: absolute;
+  bottom: -30px;
+  width: 95px;
+  left: -11px;
+}
+
+.progress-radial.web.active.progress-100, .progress-radial.desktop.active.progress-100, .progress-radial.bd.active.progress-100, .progress-radial.mobile.active.progress-100 {
+  background-image: linear-gradient(90deg, #005982 50%, transparent 50%, transparent), linear-gradient(270deg, #005982 50%, #2f3439 50%, #2f3439);
+}
+
+.progress-radial.web.active.progress-90, .progress-radial.desktop.active.progress-90, .progress-radial.bd.active.progress-90, .progress-radial.mobile.active.progress-90 {
+  background-image: linear-gradient(54deg, #005982 50%, transparent 50%, transparent), linear-gradient(270deg, #005982 50%, #2f3439 50%, #2f3439);
+}
+
+.progress-radial.web.active.progress-80, .progress-radial.desktop.active.progress-80, .progress-radial.bd.active.progress-80, .progress-radial.mobile.active.progress-80 {
+  background-image: linear-gradient(18deg, #005982 50%, transparent 50%, transparent), linear-gradient(270deg, #005982 50%, #2f3439 50%, #2f3439);
+}
+
+.progress-radial.web.active.progress-75, .progress-radial.desktop.active.progress-75, .progress-radial.bd.active.progress-75, .progress-radial.mobile.active.progress-75 {
+  background-image: linear-gradient(0deg, #005982 50%, transparent 50%, transparent), linear-gradient(270deg, #005982 50%, #2f3439 50%, #2f3439);
+}
+
+.progress-radial.web.active.progress-60, .progress-radial.desktop.active.progress-60, .progress-radial.bd.active.progress-60, .progress-radial.mobile.active.progress-60 {
+  background-image: linear-gradient(-54deg, #005982 50%, transparent 50%, transparent), linear-gradient(270deg, #005982 50%, #2f3439 50%, #2f3439);
+}
+
+.progress-radial.web.active.progress-50, .progress-radial.desktop.active.progress-50, .progress-radial.bd.active.progress-50, .progress-radial.mobile.active.progress-50 {
+  background-image: linear-gradient(-90deg, #005982 50%, transparent 50%, transparent), linear-gradient(270deg, #005982 50%, #2f3439 50%, #2f3439);
+}
+
+/* -------------------------------------
+ * Optional centered circle w/text
+ * ------------------------------------- */
+.progress-radial .overlay {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: #3E484A url(/img/textura-granulada.png);
+  border-radius: 50%;
+  margin-left: 8px;
+  margin-top: 8px;
+  text-align: center;
+  line-height: 35px;
+  font-size: 14px;
+  border: 2px solid #2f3439;
+}
+
+/* -------------------------------------
+ * Mixin for progress-% class
+ * ------------------------------------- */
+.progress-0 {
+  background-image: linear-gradient(90deg, #2f3439 50%, transparent 50%, transparent), linear-gradient(90deg, #03A9F4 50%, #2f3439 50%, #2f3439);
+}
+
+.progress-5 {
+  background-image: linear-gradient(90deg, #2f3439 50%, transparent 50%, transparent), linear-gradient(108deg, #03A9F4 50%, #2f3439 50%, #2f3439);
+}
+
+.progress-10 {
+  background-image: linear-gradient(90deg, #2f3439 50%, transparent 50%, transparent), linear-gradient(126deg, #03A9F4 50%, #2f3439 50%, #2f3439);
+}
+
+.progress-15 {
+  background-image: linear-gradient(90deg, #2f3439 50%, transparent 50%, transparent), linear-gradient(144deg, #03A9F4 50%, #2f3439 50%, #2f3439);
+}
+
+.progress-20 {
+  background-image: linear-gradient(90deg, #2f3439 50%, transparent 50%, transparent), linear-gradient(162deg, #03A9F4 50%, #2f3439 50%, #2f3439);
+}
+
+.progress-25 {
+  background-image: linear-gradient(90deg, #2f3439 50%, transparent 50%, transparent), linear-gradient(180deg, #03A9F4 50%, #2f3439 50%, #2f3439);
+}
+
+.progress-30 {
+  background-image: linear-gradient(90deg, #2f3439 50%, transparent 50%, transparent), linear-gradient(198deg, #03A9F4 50%, #2f3439 50%, #2f3439);
+}
+
+.progress-35 {
+  background-image: linear-gradient(90deg, #2f3439 50%, transparent 50%, transparent), linear-gradient(216deg, #03A9F4 50%, #2f3439 50%, #2f3439);
+}
+
+.progress-40 {
+  background-image: linear-gradient(90deg, #2f3439 50%, transparent 50%, transparent), linear-gradient(234deg, #03A9F4 50%, #2f3439 50%, #2f3439);
+}
+
+.progress-45 {
+  background-image: linear-gradient(90deg, #2f3439 50%, transparent 50%, transparent), linear-gradient(252deg, #03A9F4 50%, #2f3439 50%, #2f3439);
+}
+
+.progress-50 {
+  background-image: linear-gradient(-90deg, #03A9F4 50%, transparent 50%, transparent), linear-gradient(270deg, #03A9F4 50%, #2f3439 50%, #2f3439);
+}
+
+.progress-55 {
+  background-image: linear-gradient(-72deg, #03A9F4 50%, transparent 50%, transparent), linear-gradient(270deg, #03A9F4 50%, #2f3439 50%, #2f3439);
+}
+
+.progress-60 {
+  background-image: linear-gradient(-54deg, #03A9F4 50%, transparent 50%, transparent), linear-gradient(270deg, #03A9F4 50%, #2f3439 50%, #2f3439);
+}
+
+.progress-65 {
+  background-image: linear-gradient(-36deg, #03A9F4 50%, transparent 50%, transparent), linear-gradient(270deg, #03A9F4 50%, #2f3439 50%, #2f3439);
+}
+
+.progress-70 {
+  background-image: linear-gradient(-18deg, #03A9F4 50%, transparent 50%, transparent), linear-gradient(270deg, #03A9F4 50%, #2f3439 50%, #2f3439);
+}
+
+.progress-75 {
+  background-image: linear-gradient(0deg, #03A9F4 50%, transparent 50%, transparent), linear-gradient(270deg, #03A9F4 50%, #2f3439 50%, #2f3439);
+}
+
+.progress-80 {
+  background-image: linear-gradient(18deg, #03A9F4 50%, transparent 50%, transparent), linear-gradient(270deg, #03A9F4 50%, #2f3439 50%, #2f3439);
+}
+
+.progress-85 {
+  background-image: linear-gradient(36deg, #03A9F4 50%, transparent 50%, transparent), linear-gradient(270deg, #03A9F4 50%, #2f3439 50%, #2f3439);
+}
+
+.progress-90 {
+  background-image: linear-gradient(54deg, #03A9F4 50%, transparent 50%, transparent), linear-gradient(270deg, #03A9F4 50%, #2f3439 50%, #2f3439);
+}
+
+.progress-95 {
+  background-image: linear-gradient(72deg, #03A9F4 50%, transparent 50%, transparent), linear-gradient(270deg, #03A9F4 50%, #2f3439 50%, #2f3439);
+}
+
+.progress-100 {
+  background-image: linear-gradient(90deg, #03A9F4 50%, transparent 50%, transparent), linear-gradient(270deg, #03A9F4 50%, #2f3439 50%, #2f3439);
+}
+
+.skillbar {
+  font-family: 'Open Sans', 'sans-serif';
+  position: relative;
+  display: block;
+  margin-bottom: 15px;
+  width: 100%;
+  background: #eee;
+  height: 30px;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  transition: 0.4s linear;
+  transition-property: width, background-color;
+}
+
+.skillbar-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: bold;
+  font-size: 13px;
+  height: 30px;
+  color: #fff;
+  background: #6adcfa;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 4px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.skillbar-title span {
+  display: block;
+  background: #2f3439;
+  height: 30px;
+  width: 130px;
+  padding: 0 10px;
+  line-height: 30px;
+  text-align: center;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.skillbar-bar {
+  height: 30px;
+  width: 0px;
+  background: #6adcfa;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+
+.skill-bar-percent {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  font-size: 11px;
+  height: 30px;
+  line-height: 35px;
+  color: #444;
+  color: rgba(0, 0, 0, 0.4);
+}
+
 body, html {
   font-family: "Titillium Web", Tahoma, Arial, sans-serif !important;
 }
@@ -13463,6 +13708,19 @@ body, html {
 body {
   color: white;
   background: #3E484A url(/img/textura-granulada.png);
+}
+
+body section .icon {
+  text-align: center;
+  padding: 40px;
+}
+
+body section .icon i {
+  background-color: #03A9F4;
+  border: 1px solid #03A9F4;
+  border-radius: 50%;
+  margin-right: 5px;
+  padding: 5px 6px;
 }
 
 /*# sourceMappingURL=app.css.map */

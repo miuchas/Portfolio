@@ -18,9 +18,10 @@
   %body
     .container
       @include('banner')
-      @include('aptidoes')
       -# @include('identificacao')
       @include('timeline')
+      @include('aptidoes')
+      @include('skillbar')
 
 
   %script{:src => "/js/app.js", :type => "text/javascript"}

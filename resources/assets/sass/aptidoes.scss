@@ -1,0 +1,176 @@
+// Colors
+$corPreenchido: #03A9F4;
+$corPreenchidoEscuro: #005982;
+$corFundo: #2f3439;
+
+section#aptidoes{
+  margin-top: 40px;
+}
+
+/* -------------------------------------
+ * Bar container
+ * ------------------------------------- */
+.no-padding{
+  padding: 0px;
+}
+
+.topico{
+  font-size: 18px;
+  text-align: center;
+  margin: 0 auto 20px auto;
+  .tipo-aptidao{
+
+  }
+}
+
+// .topicos{
+//   text-align: center;
+//   .web, .desktop, .bd, .mobile{
+//     margin: 20px 0px;
+//     background-color: #03a9f4;
+//     border: 1px solid #2f3439;
+//   }
+// }
+
+
+.progress-radial{
+  float: left;
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid $corFundo; // remove gradient color
+  background-color: $corPreenchido; // default 100%
+  margin: 0px 15px 50px;
+  text-align: center;
+  .text{
+    position: absolute;
+    bottom: -30px;
+    width: 95px;
+    left: -11px;
+  }
+  &.web.active, &.desktop.active, &.bd.active, &.mobile.active{
+    &.progress-100{ background-image: linear-gradient(90deg,  $corPreenchidoEscuro 50%, transparent 50%, transparent), linear-gradient(270deg, $corPreenchidoEscuro 50%, $corFundo 50%, $corFundo); }
+    &.progress-90{  background-image: linear-gradient(54deg,  $corPreenchidoEscuro 50%, transparent 50%, transparent), linear-gradient(270deg, $corPreenchidoEscuro 50%, $corFundo 50%, $corFundo); }
+    &.progress-80{  background-image: linear-gradient(18deg,  $corPreenchidoEscuro 50%, transparent 50%, transparent), linear-gradient(270deg, $corPreenchidoEscuro 50%, $corFundo 50%, $corFundo); }
+    &.progress-75{  background-image: linear-gradient(0deg,   $corPreenchidoEscuro 50%, transparent 50%, transparent), linear-gradient(270deg, $corPreenchidoEscuro 50%, $corFundo 50%, $corFundo); }
+    &.progress-60{  background-image: linear-gradient(-54deg, $corPreenchidoEscuro 50%, transparent 50%, transparent), linear-gradient(270deg, $corPreenchidoEscuro 50%, $corFundo 50%, $corFundo); }
+    &.progress-50{  background-image: linear-gradient(-90deg, $corPreenchidoEscuro 50%, transparent 50%, transparent), linear-gradient(270deg, $corPreenchidoEscuro 50%, $corFundo 50%, $corFundo); }
+  }
+}
+
+/* -------------------------------------
+ * Optional centered circle w/text
+ * ------------------------------------- */
+.progress-radial .overlay{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: #3E484A url(/img/textura-granulada.png);
+  border-radius: 50%;
+  margin-left: 8px;
+  margin-top: 8px;
+  text-align: center;
+  line-height: 35px;
+  font-size: 14px;
+  border: 2px solid #2f3439;
+}
+
+/* -------------------------------------
+ * Mixin for progress-% class
+ * ------------------------------------- */
+
+$step: 5; // step of % for created classes
+
+$loops: round(100 / $step);
+$increment: 360 / $loops;
+$half: round($loops / 2);
+@for $i from 0 through $loops{
+  .progress-#{$i*$step}{
+    @if $i < $half{
+      $nextdeg: 90deg + ( $increment * $i );
+      background-image: linear-gradient(90deg, $corFundo 50%, transparent 50%, transparent), linear-gradient($nextdeg, $corPreenchido 50%, $corFundo 50%, $corFundo);
+    }
+    @else{
+      $nextdeg: -90deg + ( $increment * ( $i - $half ) );
+      background-image: linear-gradient($nextdeg, $corPreenchido 50%, transparent 50%, transparent), linear-gradient(270deg, $corPreenchido 50%, $corFundo 50%, $corFundo);
+    }
+  }
+}
+
+//skillbars
+.skillbar {
+  font-family: 'Open Sans', 'sans-serif';
+	position:relative;
+	display:block;
+	margin-bottom:15px;
+	width:100%;
+	background:#eee;
+	height:30px;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-webkit-transition:0.4s linear;
+	-moz-transition:0.4s linear;
+	-ms-transition:0.4s linear;
+	-o-transition:0.4s linear;
+	transition:0.4s linear;
+	-webkit-transition-property:width, background-color;
+	-moz-transition-property:width, background-color;
+	-ms-transition-property:width, background-color;
+	-o-transition-property:width, background-color;
+	transition-property:width, background-color;
+}
+
+.skillbar-title {
+	position:absolute;
+	top:0;
+	left:0;
+	font-weight:bold;
+	font-size:13px;
+  height: 30px;
+	color:#fff;
+	background:#6adcfa;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:4px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-title span {
+	display:block;
+	background:#2f3439;
+	height: 30px;
+  width: 130px;
+  padding: 0 10px;
+	line-height:30px;
+  text-align: center;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:3px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-bar {
+	height: 30px;
+	width:0px;
+	background:#6adcfa;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+}
+
+.skill-bar-percent {
+	position:absolute;
+	right:10px;
+	top:0;
+	font-size:11px;
+	height: 30px;
+	line-height:35px;
+	color:#444;
+	color:rgba(0, 0, 0, 0.4);
+}

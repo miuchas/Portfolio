@@ -19,7 +19,6 @@ elixir(function(mix) {
       'bootstrap/bootstrap.bundle.js',
       'bootstrap/popper.js',
       'bootstrap/bootstrap.js',
-      // 'plugins/circleDonutChart.js',
       'banner.js',
       'aptidoes.js',
     ],'public/js/app.js', './resources/assets/js/');

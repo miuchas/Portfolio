@@ -9,7 +9,7 @@
 @import "bootstrap/bootstrap-reboot";
 @import "bootstrap/bootstrap-grid";
 @import "fontawesome/font-awesome";
-// @import "plugins/sticky.css";
+@import "plugins/morris";
 @import "identificacao";
 @import "banner";
 @import "timeline";
@@ -24,6 +24,19 @@ body, html{ font-family: "Titillium Web", Tahoma, Arial, sans-serif !important; 
 body{
   color: white;
   background: #3E484A url(/img/textura-granulada.png);
+    section{
+    .icon{
+      text-align: center;
+      padding: 40px;
+      i{
+        background-color: #03A9F4;
+        border: 1px solid #03A9F4;
+        border-radius: 50%;
+        margin-right: 5px;
+        padding: 5px 6px;
+      }
+    }
+  }
 //   // $cinza-claro: #556;
 //   // $cinza-claro: #ddd;
 //   $cinza-claro: #e7e7e7;
