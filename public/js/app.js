@@ -12243,12 +12243,6 @@ return exports;
 
 
 
-jQuery('.skillbar').each(function(){
-	jQuery(this).find('.skillbar-bar').animate({
-		width:jQuery(this).attr('data-percent')
-	},2000);
-});
-
 $(function() {
 	var type = "";
 	$('.progress-radial').hover( function(){
@@ -12281,5 +12275,42 @@ $(function() {
   //   $('.progress-radial.'+type).removeClass('active');
   // });
 });
+
+//skilltree---------------------------------------------------------------------
+
+// on page load...
+moveProgressBar();
+// on browser resize...
+$(window).resize(function() {
+    moveProgressBar();
+});
+
+// SIGNATURE PROGRESS
+function moveProgressBar() {
+	$('.progress-wrap').each(function(index, progress) {
+    var getPercent = ($(this).data('progress-percent') / 100);
+    var getProgressWrapWidth = $(this).width();
+    var progressTotal = getPercent * getProgressWrapWidth;
+    var animationLength = 2500;
+
+    // on page load, animate percentage bar to data percentage length
+    // .stop() used to prevent animation queueing
+    $(this).find('.progress-bar').stop().animate({
+        left: progressTotal
+    }, animationLength);
+
+	});
+}
+
+// var getPercent = ($('.progress-wrap').data('progress-percent') / 100);
+// var getProgressWrapWidth = $('.progress-wrap').width();
+// var progressTotal = getPercent * getProgressWrapWidth;
+// var animationLength = 2500;
+//
+// // on page load, animate percentage bar to data percentage length
+// // .stop() used to prevent animation queueing
+// $('.progress-bar').stop().animate({
+//     left: progressTotal
+// }, animationLength);
 
 //# sourceMappingURL=app.js.map
